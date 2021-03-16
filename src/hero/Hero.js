@@ -10,6 +10,7 @@ const HeroContainer = styled.div`
     height: 95vh;
     background-image: url("https://source.unsplash.com/1920x1080/?snow");
     background-position: center;
+    overflow: visible;
 `;
 
 const TextContainer = styled.div`
