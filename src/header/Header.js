@@ -11,6 +11,7 @@ const Container = styled.div`
     height: 10rem;
     position: fixed;
     width: 100%;
+    z-index: 10;
 `;
 const LogoContainer = styled.div`
     height: 15.7rem;

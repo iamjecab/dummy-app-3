@@ -10,6 +10,7 @@ const Wrapper = styled.div`
     /* width: 100%; */
     height: 60vh;
     display: flex;
+    transform: translatey(-15rem);
 `;
 
 const ImgWrapper = styled.div`
@@ -18,7 +19,7 @@ const ImgWrapper = styled.div`
 
 const InfoContainer = styled.div`
     width: 100%;
-    height: 60rem;
+    height: 70rem;
     background-color: black;
     padding: 8rem 8rem 0 15rem;
 `;
@@ -26,7 +27,7 @@ const InfoContainer = styled.div`
 const Pricing = styled.div`
     display: flex;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
     justify-content: space-between;
     padding: 2rem 0 5rem 2rem;
     .Three,
@@ -35,7 +36,16 @@ const Pricing = styled.div`
     }
 `;
 
-const Button = styled(Btn)``;
+const Button = styled(Btn)`
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #ff2929;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    :hover {
+        background-color: white;
+    }
+`;
 
 const MainCard = () => {
     return (
@@ -43,7 +53,7 @@ const MainCard = () => {
             <Wrapper>
                 <ImgWrapper>
                     <img
-                        src="https://source.unsplash.com/450x600/?hike"
+                        src="https://source.unsplash.com/450x700/?hike"
                         alt="hike"
                     />
                 </ImgWrapper>
@@ -53,35 +63,35 @@ const MainCard = () => {
                     </LargeText>
                     <Pricing>
                         <SmallText size={2.4} color="white">
-                            Half Day Snowshoe
+                            Half Day <br /> Snowshoe
                         </SmallText>
 
                         <SmallText size={1.6} color="white">
                             Offered Daily $80
                         </SmallText>
-                        <Button>Book Now</Button>
+                        <Button size={1.6}>Book Now</Button>
                     </Pricing>
 
                     <Pricing>
                         <SmallText size={2.4} color="white">
-                            Full Day Snowshoe
+                            Full Day <br /> Snowshoe
                         </SmallText>
 
                         <SmallText size={1.6} color="white">
                             Offered Daily $120
                         </SmallText>
-                        <Button>Book Now</Button>
+                        <Button size={1.6}>Book Now</Button>
                     </Pricing>
 
                     <Pricing>
                         <SmallText size={2.4} color="white">
-                            Winter Walk
+                            Winter <br /> Walk
                         </SmallText>
 
                         <SmallText size={1.6} color="white" className="Three">
                             Offered Daily $40
                         </SmallText>
-                        <Button>Book Now</Button>
+                        <Button size={1.6}>Book Now</Button>
                     </Pricing>
 
                     <Pricing>
@@ -92,7 +102,7 @@ const MainCard = () => {
                         <SmallText size={1.6} color="white" className="Four">
                             Offered Daily $120
                         </SmallText>
-                        <Button>Book Now</Button>
+                        <Button size={1.6}>Book Now</Button>
                     </Pricing>
                 </InfoContainer>
             </Wrapper>
